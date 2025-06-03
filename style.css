@@ -131,12 +131,18 @@ img {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--light-text);
-    margin-right: 3rem; /* Dá espaço entre logo e menu */
+    margin-right: 3rem; /* Espaço entre logo e menu */
+    gap: 1rem; /* Espaço entre imagem e texto */
 }
 
-.logo i {
-    margin-right: 0.5rem;
-    font-size: 1.8rem;
+.logo-img {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    margin-right: 0.7rem;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(46,125,50,0.08);
 }
 
 .nav-links {
