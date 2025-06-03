@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastruz: A Planta Medicinal Poderosa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-leaf"></div>
+        <div class="loader-text">Carregando conhecimento sobre o Mastruz...</div>
+    </div>
+
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <span>Mastruz</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#benefits">Benefícios</a></li>
+                <li><a href="#uses">Usos</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#science">Ciência</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Mastruz</h1>
+            <p class="hero-subtitle">Chenopodium ambrosioides</p>
+            <p class="hero-text">A planta medicinal poderosa da tradição popular</p>
+            <button class="hero-btn" id="explore-btn">Explorar <i class="fas fa-chevron-down"></i></button>
+        </div>
+    </header>
+
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <div class="about-content">
+                <h2 class="section-title">O Que é o Mastruz?</h2>
+                <p class="section-text">O mastruz (Chenopodium ambrosioides), também conhecido como erva-de-santa-maria ou mentruz, é uma planta medicinal pertencente à família Amaranthaceae. Originária das Américas, é amplamente utilizada na medicina tradicional em várias culturas.</p>
+                
+                <div class="about-features">
+                    <div class="feature-card">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Origem</h3>
+                        <p>Nativa das Américas, mas atualmente distribuída globalmente</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-ruler-combined"></i>
+                        <h3>Porte</h3>
+                        <p>Pode atingir até 1 metro de altura</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Ciclo</h3>
+                        <p>Planta anual ou perene de curta duração</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1601342630314-8427c38bf5e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mastruz planta" class="plant-img">
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-section" id="benefits">
+        <div class="section-container">
+            <h2 class="section-title">Benefícios do Mastruz</h2>
+            <p class="section-subtitle">Conheça as propriedades medicinais desta incrível planta</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Vermífugo</h3>
+                    <p>Eficaz contra diversos parasitas intestinais</p>
+                    <div class="benefit-wave"></div>
+                    <div class="benefit-extra">
+                        <p>O mastruz é tradicionalmente usado para eliminar vermes intestinais, especialmente Ascaris lumbricoides. Seu princípio ativo, o ascaridol, atua paralisando e eliminando os parasitas. Recomenda-se cautela no uso, principalmente em crianças.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <h3>Expectorante</h3>
+                    <p>Ajuda no tratamento de problemas respiratórios</p>
+                    <div class="benefit-wave"></div>
+                    <div class="benefit-extra">
+                        <p>O chá ou xarope de mastruz auxilia na eliminação de secreções pulmonares, sendo útil em casos de bronquite, tosse e congestão. Seu uso deve ser moderado e preferencialmente sob orientação.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bacterium"></i>
+                    </div>
+                    <h3>Antimicrobiano</h3>
+                    <p>Atividade contra bactérias e fungos</p>
+                    <div class="benefit-wave"></div>
+                    <div class="benefit-extra">
+                        <p>Estudos mostram que o mastruz possui compostos capazes de inibir o crescimento de bactérias e fungos, sendo útil em infecções leves e no tratamento de feridas.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Anti-inflamatório</h3>
+                    <p>Reduz inflamações e dores musculares</p>
+                    <div class="benefit-wave"></div>
+                    <div class="benefit-extra">
+                        <p>O uso tópico ou oral do mastruz pode ajudar a aliviar inflamações, dores musculares e articulares, graças à presença de flavonoides e outros compostos bioativos.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Digestivo</h3>
+                    <p>Auxilia na digestão e problemas estomacais</p>
+                    <div class="benefit-wave"></div>
+                    <div class="benefit-extra">
+                        <p>O mastruz estimula a produção de sucos gástricos, aliviando sintomas de má digestão, gases e desconfortos abdominais. Seu uso deve ser feito em pequenas quantidades.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-band-aid"></i>
+                    </div>
+                    <h3>Cicatrizante</h3>
+                    <p>Acelera a cicatrização de feridas</p>
+                    <div class="benefit-wave"></div>
+                    <div class="benefit-extra">
+                        <p>Aplicado sobre feridas, o mastruz favorece a regeneração da pele e previne infecções, sendo um aliado natural no tratamento de cortes e machucados superficiais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="uses-section" id="uses">
+        <div class="section-container">
+            <div class="uses-image">
+                <img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Uso do mastruz" class="plant-img">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="uses-content">
+                <h2 class="section-title">Como Usar o Mastruz</h2>
+                
+                <div class="uses-accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Chá de Mastruz</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Para preparar o chá, utilize 1 colher de sopa de folhas frescas ou secas para cada litro de água. Ferva a água, adicione as folhas e deixe em infusão por 5-10 minutos. Coe e beba até 3 xícaras ao dia.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Uso Tópico</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Para feridas e inflamações na pele, amasse folhas frescas e aplique diretamente no local afetado. Também pode ser usado como compressa com o chá concentrado.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Xarope Natural</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Misture o suco das folhas com mel em proporção 1:1. Tome 1 colher de sopa 3 vezes ao dia para tosse e problemas respiratórios.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Óleo Essencial</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>O óleo de mastruz (contendo ascaridol) deve ser usado com extrema cautela e diluição, apenas sob orientação profissional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+        <div class="section-container">
+            <h2 class="section-title">Galeria do Mastruz</h2>
+            <p class="section-subtitle">Conheça a beleza e características desta planta</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1601342630314-8427c38bf5e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mastruz planta inteira">
+                    <div class="gallery-overlay">
+                        <h3>Planta Adulta</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Folhas de mastruz">
+                    <div class="gallery-overlay">
+                        <h3>Folhas Detalhadas</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518492104633-130d0cc84637?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Flores de mastruz">
+                    <div class="gallery-overlay">
+                        <h3>Flores e Sementes</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Chá de mastruz">
+                    <div class="gallery-overlay">
+                        <h3>Preparação Medicinal</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="science-section" id="science">
+        <div class="section-container">
+            <h2 class="section-title">Mastruz na Ciência</h2>
+            <p class="section-subtitle">O que dizem as pesquisas científicas</p>
+            
+            <div class="science-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3>Atividade Antimicrobiana</h3>
+                        <p>Estudo publicado no Journal of Ethnopharmacology comprovou a eficácia do extrato de mastruz contra várias cepas bacterianas, incluindo Staphylococcus aureus.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2018</div>
+                    <div class="timeline-content">
+                        <h3>Efeito Anti-helmíntico</h3>
+                        <p>Pesquisa brasileira confirmou a ação vermífuga do mastruz, especialmente contra Ascaris lumbricoides, comprovando o uso tradicional.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2016</div>
+                    <div class="timeline-content">
+                        <h3>Potencial Anticancerígeno</h3>
+                        <p>Estudos preliminares indicam que compostos do mastruz podem inibir o crescimento de certas células cancerígenas, abrindo caminho para novas pesquisas.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2014</div>
+                    <div class="timeline-content">
+                        <h3>Segurança e Toxicidade</h3>
+                        <p>Pesquisas alertam para o uso moderado, especialmente do óleo essencial, que em altas doses pode ser tóxico para o fígado e sistema nervoso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="precautions-section">
+        <div class="section-container">
+            <h2 class="section-title">Precauções e Contraindicações</h2>
+            
+            <div class="precautions-content">
+                <div class="precaution-card warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Grávidas</h3>
+                    <p>O mastruz é contraindicado durante a gravidez, pois pode estimular contrações uterinas.</p>
+                </div>
+                <div class="precaution-card warning">
+                    <i class="fas fa-child"></i>
+                    <h3>Crianças</h3>
+                    <p>Uso em crianças pequenas deve ser feito com cautela e sob orientação médica.</p>
+                </div>
+                <div class="precaution-card warning">
+                    <i class="fas fa-pills"></i>
+                    <h3>Interações</h3>
+                    <p>Pode interagir com medicamentos anticoagulantes e sedativos.</p>
+                </div>
+                <div class="precaution-card tip">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Dosagem</h3>
+                    <p>Sempre utilize nas dosagens recomendadas e por períodos limitados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>Mastruz</span>
+                </div>
+                <p>Este site foi criado como parte de um  projeto de iniciação científica, com o objetivo de informar sobre a planta mastruz (Dysphania ambrosioides). Buscamos destacar seus benefícios medicinais e alertar sobre o uso adequado, promovendo a conscientização e o acesso a informações confiáveis .</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#about">Sobre o Mastruz</a></li>
+                    <li><a href="#benefits">Benefícios</a></li>
+                    <li><a href="#uses">Como Usar</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#science">Pesquisas</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p><i class="fas fa-envelope"></i> feiradeciencias@escola.com</p>
+                <p><i class="fas fa-school"></i> Colégio [Nome da Escola]</p>
+                <p><i class="fas fa-user-graduate"></i> Aluno: [Seu Nome]</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Feira de Ciências - Todos os direitos reservados</p>
+            <p>Site desenvolvido com HTML, CSS, JavaScript e GSAP</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
